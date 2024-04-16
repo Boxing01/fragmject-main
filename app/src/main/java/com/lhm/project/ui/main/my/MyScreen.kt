@@ -87,14 +87,14 @@ fun MyScreen(
             textAlign = TextAlign.Center
         )
         Spacer(Modifier.height(45.dp))
-        ArrowRightItem("组件Demo") { onNavigateToDemo() }
-        HorizontalDivider()
+//        ArrowRightItem("组件Demo") { onNavigateToDemo() }
+//        HorizontalDivider()
         ArrowRightItem("我的积分") { onNavigateToMyCoin() }
         HorizontalDivider()
         ArrowRightItem("我的收藏") { onNavigateToMyCollect() }
         HorizontalDivider()
-        ArrowRightItem("我的分享") { onNavigateToMyShare() }
-        HorizontalDivider()
+//        ArrowRightItem("我的分享") { onNavigateToMyShare() }
+//        HorizontalDivider()
         ArrowRightItem("书签历史") { onNavigateToBookmarkHistory() }
         HorizontalDivider()
         ArrowRightItem("系统设置") { onNavigateToSetting() }

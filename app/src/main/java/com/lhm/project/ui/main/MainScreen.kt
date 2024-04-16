@@ -237,7 +237,7 @@ fun BottomNavigation(
                         badge = {
                             if ("我的" == item.label) {
                                 Badge {
-                                    val badgeNumber = "1"
+                                    val badgeNumber = "0"
                                     Text(
                                         badgeNumber,
                                         modifier = Modifier.semantics {

@@ -130,61 +130,61 @@ fun SettingScreen(
                         Spacer(Modifier.width(5.dp))
                     }
                     HorizontalDivider()
-                    Row(
-                        modifier = Modifier
-                            .background(colorResource(R.color.white))
-                            .fillMaxWidth()
-                            .height(45.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Text(
-                            text = "屏幕录制",
-                            modifier = Modifier
-                                .weight(1f)
-                                .padding(start = 25.dp, end = 25.dp),
-                            fontSize = 13.sp,
-                            color = colorResource(R.color.text_333),
-                        )
-                        Switch(
-                            checked = screenRecordState,
-                            onCheckedChange = {
-                                screenRecordState = it
-                                if (screenRecordState) {
-                                    (context as AppCompatActivity).startScreenRecord(object :
-                                        ScreenRecordCallback {
-                                        override fun onActivityResult(
-                                            resultCode: Int,
-                                            message: String
-                                        ) {
-                                            if (resultCode != Activity.RESULT_OK) {
-                                                screenRecordState = false
-                                            }
-                                            coroutineScope.launch {
-                                                snackbarHostState.showSnackbar(
-                                                    message, "确定"
-                                                )
-                                            }
-                                        }
-                                    })
-                                } else {
-                                    (context as AppCompatActivity).stopScreenRecord(object :
-                                        ScreenRecordCallback {
-                                        override fun onActivityResult(
-                                            resultCode: Int,
-                                            message: String
-                                        ) {
-                                            coroutineScope.launch {
-                                                snackbarHostState.showSnackbar(
-                                                    message, "确定"
-                                                )
-                                            }
-                                        }
-                                    })
-                                }
-                            },
-                        )
-                        Spacer(Modifier.width(5.dp))
-                    }
+//                    Row(
+//                        modifier = Modifier
+//                            .background(colorResource(R.color.white))
+//                            .fillMaxWidth()
+//                            .height(45.dp),
+//                        verticalAlignment = Alignment.CenterVertically
+//                    ) {
+//                        Text(
+//                            text = "屏幕录制",
+//                            modifier = Modifier
+//                                .weight(1f)
+//                                .padding(start = 25.dp, end = 25.dp),
+//                            fontSize = 13.sp,
+//                            color = colorResource(R.color.text_333),
+//                        )
+//                        Switch(
+//                            checked = screenRecordState,
+//                            onCheckedChange = {
+//                                screenRecordState = it
+//                                if (screenRecordState) {
+//                                    (context as AppCompatActivity).startScreenRecord(object :
+//                                        ScreenRecordCallback {
+//                                        override fun onActivityResult(
+//                                            resultCode: Int,
+//                                            message: String
+//                                        ) {
+//                                            if (resultCode != Activity.RESULT_OK) {
+//                                                screenRecordState = false
+//                                            }
+//                                            coroutineScope.launch {
+//                                                snackbarHostState.showSnackbar(
+//                                                    message, "确定"
+//                                                )
+//                                            }
+//                                        }
+//                                    })
+//                                } else {
+//                                    (context as AppCompatActivity).stopScreenRecord(object :
+//                                        ScreenRecordCallback {
+//                                        override fun onActivityResult(
+//                                            resultCode: Int,
+//                                            message: String
+//                                        ) {
+//                                            coroutineScope.launch {
+//                                                snackbarHostState.showSnackbar(
+//                                                    message, "确定"
+//                                                )
+//                                            }
+//                                        }
+//                                    })
+//                                }
+//                            },
+//                        )
+//                        Spacer(Modifier.width(5.dp))
+//                    }
 //                    HorizontalDivider()
 //                    ArrowRightItem("跳过广告", "(仅支持部分APP的倒计时广告)") {
 //                        context.startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
@@ -193,11 +193,11 @@ fun SettingScreen(
 //                    ArrowRightItem("电池优化", "(跳过广告与我配合效果更佳哦~)") {
 //                        context.requestIgnoreBatteryOptimizations()
 //                    }
-                    HorizontalDivider()
-                    ArrowRightItem("隐私政策") { onNavigateToWeb("file:///android_asset/privacy_policy.html") }
-                    HorizontalDivider()
-                    ArrowRightItem("问题反馈") { onNavigateToWeb("https://github.com/miaowmiaow/fragmject/issues") }
-                    HorizontalDivider()
+//                    HorizontalDivider()
+//                    ArrowRightItem("隐私政策") { onNavigateToWeb("file:///android_asset/privacy_policy.html") }
+//                    HorizontalDivider()
+//                    ArrowRightItem("问题反馈") { onNavigateToWeb("https://github.com/miaowmiaow/fragmject/issues") }
+//                    HorizontalDivider()
                     Row(
                         modifier = Modifier
                             .clickable {
@@ -236,7 +236,7 @@ fun SettingScreen(
                         )
                     }
                     HorizontalDivider()
-                    ArrowRightItem("关于玩Android") { onNavigateToWeb("https://wanandroid.com") }
+//                    ArrowRightItem("关于玩Android") { onNavigateToWeb("https://wanandroid.com") }
                     Spacer(Modifier.height(20.dp))
                     if (uiState.user.id.isNotBlank()) {
                         Button(
