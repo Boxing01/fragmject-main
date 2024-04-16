@@ -327,15 +327,6 @@ plugins {
 - [square/okhttp](https://github.com/square/okhttp)
 - [square/retrofit](https://github.com/square/retrofit)
 
-## Gitee镜像
-- [fragmject](https://gitee.com/zhao.git/FragmentProject.git)
-
-## About me
-- QQ : 237934622
-- QQ群 : 389499839
-- Email : <237934622@qq.com>
-- JueJin：[miaowmiaow](https://juejin.cn/user/3342971112791422)
-
 ## Thanks
 感谢所有优秀的开源项目 ^_^   
 如果喜欢的话希望给个 Star 或 Fork ^_^  
