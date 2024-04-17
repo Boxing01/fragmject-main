@@ -42,6 +42,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -113,7 +114,8 @@ fun LoginScreen(
                     )
                     Spacer(Modifier.height(20.dp))
                     Text(
-                        text = "玩Android",
+//                        text = "玩Android",
+                        text = stringResource(id = R.string.app_name),
                         modifier = Modifier.padding(horizontal = 20.dp),
                         style = MaterialTheme.typography.titleLarge,
                         color = colorResource(R.color.white),

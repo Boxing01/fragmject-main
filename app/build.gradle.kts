@@ -113,7 +113,7 @@ android {
             //关联维度
             dimension = "tier"
             manifestPlaceholders["app_channel_value"] = name
-            manifestPlaceholders["app_name_value"] = "玩Android"
+            manifestPlaceholders["app_name_value"] = "Play AT"
         }
     }
 
