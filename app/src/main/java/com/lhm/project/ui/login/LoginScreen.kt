@@ -114,7 +114,6 @@ fun LoginScreen(
                     )
                     Spacer(Modifier.height(20.dp))
                     Text(
-//                        text = "玩Android",
                         text = stringResource(id = R.string.app_name),
                         modifier = Modifier.padding(horizontal = 20.dp),
                         style = MaterialTheme.typography.titleLarge,

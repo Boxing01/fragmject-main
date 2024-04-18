@@ -28,7 +28,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.core.content.ContextCompat
+import com.lhm.project.R
 import kotlinx.coroutines.launch
 
 @Composable
@@ -58,7 +60,7 @@ fun PermissionScreen() {
         AlertDialog(
             onDismissRequest = { storageDialog = false },
             title = { Text(text = "申请存储空间权限") },
-            text = { Text(text = "玩Android需要使用存储空间，我们想要将文章内容缓存到本地，从而加快打开速度和减少用户流量使用") },
+            text = { Text(text = stringResource(id = R.string.app_name)+"需要使用存储空间，我们想要将文章内容缓存到本地，从而加快打开速度和减少用户流量使用") },
             confirmButton = {
                 TextButton(onClick = { requestPermissions.launch(storagePermissions) }) { Text("确定") }
             },

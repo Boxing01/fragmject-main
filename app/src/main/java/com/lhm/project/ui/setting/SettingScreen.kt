@@ -236,7 +236,7 @@ fun SettingScreen(
                         )
                     }
                     HorizontalDivider()
-//                    ArrowRightItem("关于玩Android") { onNavigateToWeb("https://wanandroid.com") }
+//                    ArrowRightItem("关于"+stringResource(id = R.string.app_name)) { onNavigateToWeb("https://wanandroid.com") }
                     Spacer(Modifier.height(20.dp))
                     if (uiState.user.id.isNotBlank()) {
                         Button(
